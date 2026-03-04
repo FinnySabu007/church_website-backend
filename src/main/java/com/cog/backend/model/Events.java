@@ -24,15 +24,15 @@ public class Events {
 
     @NotNull(message = "Date is required")
     @Column(nullable=false)
-    private LocalDate date;
+    private LocalDate eventDate;
 
     //Constructors
     public Events() {}
 
-    public Events(String title,String description,LocalDate date){
+    public Events(String title,String description,LocalDate eventDate){
         this.title=title;
         this.decription=description;
-        this.date=date;
+        this.eventDate=eventDate;
     }
 
     //Getters & Setters
@@ -55,11 +55,11 @@ public class Events {
         this.decription = decription;
     }
 
-    public void setDate(LocalDate date) {
-        this.date = date;
+    public void setDate(LocalDate eventDate) {
+        this.eventDate = eventDate;
     }
 
     public LocalDate getDate() {
-        return date;
+        return eventDate;
     }
 }
